@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/darkgray" >
+    
+    <TextView
+        android:id="@+id/fornavn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceSmall" >
+    </TextView>
+    <TextView
+        android:id="@+id/etternavn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/fornavn"
+        android:layout_marginLeft="3dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top|left"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/bilde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top|left"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/nummer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left|bottom"
+        android:visibility="gone"/>
+	<TextView 
+    	android:id="@+id/currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/white"
+        android:text="@string/kr"/>
+    <TextView
+        android:id="@+id/sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/currency"
+        android:layout_marginRight="3dp"
+        android:layout_centerVertical="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/white" />
+    
+</RelativeLayout>

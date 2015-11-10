@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical" >
+
+    <Spinner
+        android:id="@+id/settinnPersonid"
+        style="@android:style/Widget.Holo.Spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_alignLeft="@+id/settinnSum"
+        android:popupBackground="@color/white"
+        android:prompt="@string/velg" />
+
+    <EditText
+        android:id="@+id/settinnSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radiogruppe"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/sum"
+        android:inputType="number"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/settinnGjeld"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settinnBeskrivelse"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/green"
+        android:src="@drawable/check"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/addmoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/addmoney" />
+	<RadioGroup 
+	    android:id="@+id/radiogruppe"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android1:layout_alignLeft="@+id/settinnSum"
+	    android:layout_below="@+id/settinnPersonid"
+	    android:layout_marginTop="20dp"
+	    android:checkedButton="@+id/skyldermeg">
+    	<RadioButton
+        	android:id="@+id/skyldermeg"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/white"
+	        android:text="@string/skyldermeg" />
+    	<RadioButton
+        	android:id="@+id/jegskylder"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/white"
+	        android:text="@string/jegskylder" />
+    </RadioGroup>
+
+    <EditText
+        android1:id="@+id/settinnBeskrivelse"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignLeft="@+id/settinnSum"
+        android1:layout_below="@+id/settinnSum"
+        android1:layout_marginTop="15dp"
+        android1:ems="10"
+        android1:hint="@string/beskrivelse"
+        android1:maxLength="70"
+        android:inputType="textCapSentences"
+        android1:textColor="@color/white" >
+
+        <requestFocus />
+    </EditText>
+
+   
+
+</RelativeLayout>

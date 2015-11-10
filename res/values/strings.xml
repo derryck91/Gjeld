@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gjeld</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="tomliste">Listen er tom. Legg til personer i menyen</string>
+    <string name="tomlistegjeld">Listen er tom. Legg til gjeld</string>
+    <string name="pluss">Du er i pluss</string>
+    <string name="minus">Du er i minus</string>
+    <string name="fornavn">Fornavn</string>
+    <string name="etternavn">Etternavn</string>
+    <string name="count">Antall:</string>
+    <string name="nummer">Telefonnummer (frivillig)</string>
+    <string name="settinn">Lagre</string>
+    <string name="velg">Velg person</string>
+    <string name="deletetitle">Vil du slette?</string>
+    <string name="deletemessage">Er du sikker på at du vil slette</string>
+    <string name="deletebutton">Slett</string>
+    <string name="avbryt">Avbryt</string>
+    <string name="beskrivelse">Beskrivelse</string>
+    <string name="sum">Sum</string>
+    <string name="skyldermeg">Skylder meg</string>
+    <string name="jegskylder">Jeg skylder</string>
+    <string name="oppdatert">oppdatert!</string>
+    <string name="ok">OK</string>
+    <string name="betalt">Betalt</string>
+    <string name="regex">Navn kan kun inneholde bokstaver. \n\nTelefonnummer kan kun inneholde tall.</string>
+    <string name="opprett">Du må opprette en person først!</string>
+    <string name="opprettetgjeld">Gjeld registrert!</string>
+    <string name="lagttil">lagt til!</string>
+    <string name="velgnr">Velg nummer:</string>
+    <string name="ingenkontakter">Ingen kontakter!</string>
+    <string name="sendsms">Send sms</string>
+    <string name="smsmessage">Vil du sende en sms med beløpet til</string>
+    <string name="smsdel1">Dette er en automatisk sms fra appen "Gjeld". Du skylder meg </string>
+    <string name="smsdel2"> kr. Fint om du betaler snart.</string>
+    <string name="gjeldsmsdel1">Dette er en automatisk sms fra appen "Gjeld". Jeg skylder deg </string>
+ 	<string name="gjeldsmsdel2"> kr, og betaler snart.</string>
+ 	<string name="smssendt">SMS sendt til </string>
+ 	<string name="ikkenummer">Nummer ikke registrert</string>
+ 	<string name="underskudd">Du har en total gjeld på</string>
+ 	<string name="overskudd">Du har et overskudd på</string>
+ 	<string name="kr">kr</string>
+ 	<string name="gjeldsfri">Du er gjeldsfri!</string>
+ 	<string name="likestore">Inn- og utestående gjeld er like store!</string>
+ 	<string name="fyllut">Du må fylle ut alle feltene!</string>
+</resources>

@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgray">
+    
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/totalsum"
+        android:fontFamily="sans-serif-thin"
+        android:smoothScrollbar="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white" />
+
+    <TextView 
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/tomliste"
+        android:textStyle="italic"
+        android:layout_centerVertical="true"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/totalup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/pluss"
+        android:src="@drawable/arrowup" />
+
+    <TextView
+        android:id="@+id/totalsum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/totalup"
+        android:gravity="center"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/totaldown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/minus"
+        android:src="@drawable/arrowdown" />
+
+    <TextView
+        android:id="@+id/antall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white" />
+    
+</RelativeLayout>

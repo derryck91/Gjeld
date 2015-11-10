@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/details_fragment"
+    android:background="@color/darkgray">
+    
+    <ImageButton
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_alignParentRight="true"
+        android:background="@color/darkgray"
+        android:src="@drawable/delete"
+        android:contentDescription="@string/app_name" />
+
+    <ImageButton
+        android:id="@+id/editButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/darkgray"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/edit" />
+
+    <TextView
+        android:id="@+id/navn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:fontFamily="sans-serif-bold" 
+        android:textSize="20sp"
+        android:textColor="@color/white" />
+    <TextView
+        android:id="@+id/nummer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/navn"
+        android:textColor="@color/white"/>
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/nummer"
+        android:focusable="false"
+        android:textColor="@color/white" >
+    </ListView>
+    
+    <TextView 
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/tomlistegjeld"
+        android:textStyle="italic"
+        android:layout_marginTop="280dp"
+        android:gravity="center" />
+    
+
+    <ImageButton
+        android:id="@+id/sendsms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deleteButton"
+        android:layout_toRightOf="@+id/navn"
+        android:layout_marginTop="10dp"
+        android:background="@color/darkgray"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/sms" />
+
+    <ImageButton
+        android:id="@+id/leggtilgjeld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sendsms"
+        android:layout_alignParentLeft="true"
+        android:background="@color/darkgray"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/plus" />
+
+    <Button
+        android:id="@+id/betal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/leggtilgjeld"
+        android:text="Betal" />
+
+</RelativeLayout>
